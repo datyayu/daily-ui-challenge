@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign up</title>
+    <meta name="description" content="Sign up demo" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300|Work+Sans:300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-background">
+      <div class="card">
+        <!-- Logo -->
+        <div class="card__section card__logo">
+          <img src="./logo.svg" alt="Logo" />
+          <h2 class="card__logo__text">BIG DATA</h2>
+        </div>
+
+        <!-- Form -->
+        <div class="card__section card__form">
+          <div class="card__form__field">
+            <label for="email" class="card__form__label js-field-label">
+              Email
+            </label>
+            <input
+              type="email"
+              placeholder="user@email.com"
+              id="email"
+              class="card__form__input js-field-input"
+            />
+          </div>
+          <div class="card__form__field">
+            <label for="password" class="card__form__label js-field-label">
+              Password
+            </label>
+            <input
+              type="password"
+              placeholder="********"
+              id="password"
+              class="card__form__input js-field-input"
+            />
+          </div>
+
+          <div class="card__form__buttons">
+            <button role="button" class="card__form__button">Sign In</button>
+            <button role="button" class="card__form__button">Sign Up</button>
+          </div>
+
+          <a href="#" class="card__form__link">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -111,7 +111,7 @@ const entriesListTemplate = entriesTemplates.join("");
 // Get current date
 const formattedDate = formatDate(new Date());
 
-// Fill template to file
+// Fill template with data
 console.log("(INDEX SCRIPT) [2/3] Filling template with data.");
 const indexTemplateFile = fs.readFileSync(indexTemplateFilePath, {
   encoding: "utf8"

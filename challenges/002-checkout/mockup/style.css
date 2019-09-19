@@ -1,0 +1,155 @@
+html,
+body {
+  font-family: "quicksand", "sans-serif";
+  margin: 0;
+  padding: 0; }
+
+.page-background {
+  align-items: center;
+  background: linear-gradient(45deg, rgba(71, 29, 236, 0.8) 15%, #4991fe 80%, #9dc1ff 100%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw; }
+
+.card {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px 0;
+  border-radius: 20px;
+  display: flex;
+  height: 610px;
+  overflow: hidden;
+  width: 940px; }
+
+.info {
+  background: linear-gradient(45deg, #7596eb 0%, rgba(117, 150, 235, 0.9) 20%, rgba(117, 150, 235, 0.6) 100%);
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 38.5%;
+  padding: 1.6rem 0;
+  text-align: center;
+  width: 38.5%; }
+
+.info__title {
+  box-sizing: border-box;
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0; }
+
+.info__album {
+  margin: 2.15rem 0 1rem 0; }
+
+.info__album__cover {
+  height: 227px;
+  width: 225px; }
+
+.info__album__title {
+  font-size: 1.65rem;
+  font-weight: 300;
+  margin: 1.2rem 0 0.75rem; }
+
+.info__album__artist {
+  color: #d1ddfd;
+  font-weight: 300;
+  font-size: 1.35rem;
+  margin: 0; }
+
+.info__price {
+  font-size: 2.7rem;
+  font-weight: 300;
+  margin: 0.3rem; }
+
+.payment {
+  padding: 4.45rem 3rem;
+  width: 100%; }
+
+.payment__title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 1.6rem; }
+
+.payment__card {
+  background-color: #517ceb;
+  border-radius: 17px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 25px 50px 0;
+  box-sizing: border-box;
+  font-family: lekton;
+  height: 257px;
+  margin: 2.45rem 0px 2.45rem 17px;
+  position: relative;
+  padding: 1.1rem 3.8rem 1.1rem 1.35rem;
+  width: 444px; }
+
+.payment__card__exp-ccv-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem; }
+
+.payment__card__field, .payment__card__field--ccv {
+  margin-bottom: -6px; }
+  .payment__card__field--ccv {
+    max-width: 52px; }
+
+.payment__card__label {
+  color: #96aaf0;
+  margin: 1rem 0 0 0; }
+
+.payment__card__exp-inputs {
+  align-items: flex-end;
+  display: flex; }
+  .payment__card__exp-inputs .payment__card__input {
+    width: 35px; }
+
+.payment__card__input {
+  background: none;
+  border: none;
+  font-family: lekton;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgba(221, 230, 255, 0.9);
+  margin: 0.3rem 0.15rem;
+  outline: none; }
+  .payment__card__input::placeholder {
+    color: rgba(221, 230, 255, 0.1); }
+
+.payment__card__value {
+  color: rgba(221, 230, 255, 0.9);
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0.3rem 0.15rem; }
+
+.payment__card__visa-logo {
+  height: 32px;
+  position: absolute;
+  right: 48px;
+  top: 30px;
+  width: 65px; }
+
+.payment__buttons {
+  margin-top: 3.4rem;
+  text-align: center; }
+
+.payment__button {
+  background-color: #12cd02;
+  border: 1px solid #12cd02;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 16px 0;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 2.75rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  outline: none;
+  padding: 0.6rem 7.2rem 1.4rem;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out, box-shadow 200ms ease-in-out; }
+  .payment__button:active {
+    border: 1px solid #12cd02;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 32px 0;
+    color: #12cd02; }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkout</title>
+    <meta name="description" content="Checkout demo" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:200,300,400|Lekton:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-background">
+      <div class="card">
+        <!-- Info  -->
+        <div class="info">
+          <!-- Title-->
+          <h1 class="info__title">Checkout</h1>
+
+          <!-- Album Info -->
+          <div class="info__album">
+            <img
+              class="info__album__cover"
+              src="./assets/cover.jpg"
+              alt="きゃわふるTORNADO - きゃわふるTORNADO -　星空ディスティネーション　Cover"
+            />
+            <h3 class="info__album__title">星空ディスティネーション</h3>
+            <h4 class="info__album__artist">きゃわふるTORNADO</h4>
+          </div>
+
+          <!-- Price -->
+          <h4 class="info__price">¥1,000</h4>
+        </div>
+
+        <!-- Payment details  -->
+        <form class="payment">
+          <!-- Title-->
+          <h2 class="payment__title">Payment Details</h2>
+
+          <!-- Credit Card -->
+          <div class="payment__card">
+            <img
+              class="payment__card__visa-logo"
+              src="./assets/visa-logo.svg"
+              alt="VISA logo"
+            />
+
+            <!-- Credit Card Name -->
+            <div class="payment__card__field">
+              <p class="payment__card__label">CARD HOLDER NAME</p>
+              <input
+                class="payment__card__input"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+
+            <!-- Credit Card Number -->
+            <div class="payment__card__field">
+              <p class="payment__card__label">CARD NUMBER</p>
+              <input
+                class="payment__card__input"
+                type="tel"
+                placeholder="1234 5678 9101 1213"
+                pattern="\d*"
+                maxlength="19"
+                required
+              />
+            </div>
+
+            <div class="payment__card__exp-ccv-container">
+              <!-- Credit Card Exp Date -->
+              <div class="payment__card__field">
+                <p class="payment__card__label">EXP.</p>
+                <div class="payment__card__exp-inputs">
+                  <input
+                    class="payment__card__input"
+                    type="tel"
+                    placeholder="09"
+                    required
+                    pattern="\d*"
+                    maxlength="2"
+                  />
+                  <p class="payment__card__value">/</p>
+                  <input
+                    class="payment__card__input"
+                    placeholder="22"
+                    required
+                    maxlength="2"
+                  />
+                </div>
+              </div>
+
+              <!-- Credit Card CCV -->
+              <div class="payment__card__field--ccv">
+                <p class="payment__card__label">CCV</p>
+                <input
+                  class="payment__card__input"
+                  placeholder="∗∗∗"
+                  type="password"
+                  required
+                  maxlength="4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buy button -->
+          <div class="payment__buttons">
+            <button type="submit" class="payment__button">
+              Buy
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

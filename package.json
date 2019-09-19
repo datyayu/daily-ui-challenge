@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "generate-index": "node _scripts/generate-index.js"
   },
   "devDependencies": {
     "husky": "^3.0.5",
@@ -17,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node _scripts/generate-index.js"
+      "pre-commit": "yarn generate-index"
     }
   }
 }
